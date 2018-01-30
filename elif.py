@@ -1,5 +1,4 @@
 # snippet 片段
-
 b = True
 
 if b:
