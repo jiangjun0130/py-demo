@@ -6,12 +6,12 @@ def demo():
     for i in range(0,9):
         a = 'a'
         c += 1
-    print(c)
-    print(a)
+    print(c) # 59
+    print(a) # a
     # 重要：说明for循环外部可以引用for循环内部的变量。因为在Python中没有"块级作用域"的概念，只有函数才有作用域
     # 在Python中一个代码块（for、if-else、while等）是无法形成一个块级作用域的，只有函数才能形成作用域。
     # 代码块中的变量会被视为与函数的变量是同一个级别的。
 
 demo()
 
-print(c)
+print(c) # 10
