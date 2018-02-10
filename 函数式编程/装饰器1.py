@@ -1,7 +1,11 @@
 # 装饰器基础用法
 import time
+from functools import wraps
 
 def decorator(func):
+
+    # wraps注解作用：解决在引入装饰器以后，原函数的name、doc等属性被更改。
+    @wraps(func)
     def wrapper():
         print(time.time())
         func()
@@ -13,4 +17,5 @@ def f1():
 
 f1()
 
+print(f1.__name__)
 
