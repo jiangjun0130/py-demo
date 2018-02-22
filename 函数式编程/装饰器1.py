@@ -17,5 +17,5 @@ def f1():
 
 f1()
 
-print(f1.__name__)
+print(f1.__name__)  # wrapper
 
