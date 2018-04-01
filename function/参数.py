@@ -43,10 +43,14 @@ def demo(*param):
 
 # 调用方式一
 demo(1,2,3,4,5,6)
+# (1, 2, 3, 4, 5, 6)
+# <class 'tuple'>
 
 # 调用方式二
 a = (1,2,3,4,5,6)
 demo(*a)
+# (1, 2, 3, 4, 5, 6)
+# <class 'tuple'>
 
 # 可变参数与必须参数、默认参数一起运用时，需要将默认参数放到最后
 def demo2(param1, *param3, param2=2):
@@ -55,12 +59,15 @@ def demo2(param1, *param3, param2=2):
     print(param3)
 
 demo2('1',1,2,3,param2=22)
+#  1
+#  22
+#  (1, 2, 3)
 
 # 可变关键字参数列表
 # param 类型为dict
 def city_temperature(**param):
     print(param)
-    print(type(param))
+    print(type(param))  # <class 'dict'>
     for key, value in param.items():
         print(key, ':', value)
 

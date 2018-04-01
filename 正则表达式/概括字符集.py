@@ -11,17 +11,17 @@ import re
 a = 'python 1234j&ava567*go_+'
 
 result = re.findall('[0-9]',a)
-print(result)
+print(result) # ['1', '2', '3', '4', '5', '6', '7']
 
 result = re.findall('[^0-9]',a)
-print(result)
+print(result) # ['p', 'y', 't', 'h', 'o', 'n', ' ', 'j', '&', 'a', 'v', 'a', '*', 'g', 'o', '_', '+']
 
 result = re.findall('\w',a)
-print(result)
+print(result) # ['p', 'y', 't', 'h', 'o', 'n', '1', '2', '3', '4', 'j', 'a', 'v', 'a', '5', '6', '7', 'g', 'o', '_']
 
 result = re.findall('\W',a)
-print(result)
+print(result) # [' ', '&', '*', '+']
 
 
 result = re.findall('\s',a)
-print(result)
+print(result) # [' ']
