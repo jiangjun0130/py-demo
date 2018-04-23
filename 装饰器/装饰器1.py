@@ -2,6 +2,8 @@
 import time
 from functools import wraps
 
+# 装饰器：本质为函数，为其他函数添加附加功能。函数即变量
+
 def decorator(func):
 
     # wraps注解作用：解决在引入装饰器以后，原函数的name、doc等属性被更改。

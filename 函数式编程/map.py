@@ -7,8 +7,8 @@ def square(x):
     return x**2
 
 # 进化1
-#for x in list_x:
-#    print(square(x))
+for x in list_x:
+   print(square(x))
 
 # 进化2
 result = map(square, list_x)
