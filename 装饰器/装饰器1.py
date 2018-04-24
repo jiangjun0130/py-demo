@@ -13,7 +13,7 @@ def decorator(func):
         func()
     return wrapper
 
-@decorator
+@decorator  #  f1 = decorator(f1)
 def f1():
     print('This is f1 function')
 
