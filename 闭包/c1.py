@@ -12,3 +12,4 @@ f = curve_pre()
 print(f.__closure__) # 闭包的环境变量保存在内置变量__closure__中
 print(f.__closure__[0].cell_contents) # 25 [环境变量]
 print(f(2)) # 100
+print(f(2)) # 100
